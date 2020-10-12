@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" 
+    rel="stylesheet">
 </head>
 
 <body>
@@ -32,50 +34,63 @@
             <input type="textarea" placeholder="Search...">
         </div>
     </div>
-    <!--slideshow container-->
-    <div class="container">
+    <div class="content">
+        <!--slideshow container-->
+        <div class="container">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
-            <img src="img1.jpg" style="width: auto">
-            <div class="text">Caption Text</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 2</div>
-            <img src="img7.jpg" style="width: auto">
-            <div class="text">Caption Text</div>
-        </div>
-        <script>
-            var slideIndex = 0;
-            showSlides();
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="img1.jpg" style="width: auto">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="img7.jpg" style="width: auto">
+                    <div class="text">Caption Text</div>
+                </div>
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
 
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1
-                }
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 7000); // Change image every 7 seconds
-            }
-        </script>
-    </div>
-    <div class="container">
-        <div class="grid_container">
-            <div class="grid hx1">
-                <img src="img3.jpg" alt="random_image">
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        setTimeout(showSlides, 7000); // Change image every 7 seconds
+                    }
+                </script>
             </div>
-            <div class="grid hx2">
-                <img src="img4.jpg" alt="random_image">
+            <div class="container">
+                <div class="container right">
+                    <div class="grid hx1">
+                        <img src="img3.jpg" alt="random_image">
+                        <div class="absolute looks">NEW LOOKS<br />LUXURY</div>
+                    </div>
+                    <div class="grid hx2">
+                        <img src="img2.jpg" alt="random_image">
+                        <div class="absolute wears">FOOTWEARS</div>
+                    </div>
+                    <div class="grid hx2 dexign">
+                        <img src="img4.jpg" alt="random_image">
+                        <div class="absolute pricetag">Starting at $25</div>
+                    </div>
+                    <div class="grid hx1">
+                        <img src="img5.jpg" alt="random_image">
+                        <div class="absolute beauty">BEAUTY<br />&<br />ELEGANCE</div>
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
+
 </body>
 
 </html>
