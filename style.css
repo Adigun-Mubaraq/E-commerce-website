@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-size: larger;
+}
+
+.header {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 10px 5px;
+    height: 80px;
+    width: 100%;
+    display: inline-flex;
+}
+
+.logo {
+    margin-top: 20px;
+    float: left;
+    padding-right: 15%;
+    margin-left: 40px;
+}
+
+.topnav {
+    margin-top: 30px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+
+}
+
+.topnav a:hover {
+    color: red;
+}
+
+.search_container input[type=textarea] {
+    padding: 7px 15px;
+    border: 1px solid black;
+    font-size: 15px;
+    width: 250px;
+    margin-left: 300px;
+    border-radius: 50px;
+    margin-bottom: auto;
+    margin-top: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_contents {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    z-index: 1;
+}
+
+.dropdown_contents a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 20px;
+    display: block;
+    font-size: medium;
+}
+
+.dropdown_contents a:hover {
+    color: red;
+}
+
+.dropdown:hover .dropdown_contents {
+    display: block;
+}
+
+/* Slideshow container */
+.container {
+    position: relative;
+    padding: 30px 10px 10px 40px;
+    float: left;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 55%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: lightgray;
+}
+
+/* Caption text */
+.text {
+    font-size: xx-large;
+    font-style: italic;
+    top: 50%;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 15px;
+    padding: 40px 20px;
+    position: absolute;
+    top: 0;
+}
+
+
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5.0s;
+    animation-name: fade;
+    animation-duration: 5.0s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.grid_container {
+    column-count:2;
+    column-gap: 0.1px;
+}
+.grid{
+    width: 350px;
+}
+
+.block {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+}

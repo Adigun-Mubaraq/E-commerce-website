@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="#">HOME</a>
+            <a href="#">SHOP</a>
+            <div class="dropdown"><a href="#">PRODUCTS</a>
+                <div class="dropdown_contents">
+                    <a href="#">MEN'S WEAR</a>
+                    <a href="#">WOMEN'S WEAR</a>
+                    <a href="#">KIDS WEAR</a>
+                </div>
+            </div>
+            <a href="#">CONTACT US</a>
+        </div>
+        <!--search container-->
+        <div class="search_container">
+            <input type="textarea" placeholder="Search...">
+        </div>
+    </div>
+    <!--slideshow container-->
+    <div class="container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="img1.jpg" style="width: auto">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="img7.jpg" style="width: auto">
+            <div class="text">Caption Text</div>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 7000); // Change image every 7 seconds
+            }
+        </script>
+    </div>
+    <div class="container">
+        <div class="grid_container">
+            <div class="grid hx1">
+                <img src="img3.jpg" alt="random_image">
+            </div>
+            <div class="grid hx2">
+                <img src="img4.jpg" alt="random_image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
