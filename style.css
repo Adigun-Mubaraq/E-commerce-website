@@ -8,7 +8,7 @@ body {
     padding: 10px;
     box-shadow: 0px 10px 5px;
     height: 80px;
-    width: 100%;
+    width: 99%;
     display: inline-flex;
 }
 
@@ -74,10 +74,13 @@ body {
 .dropdown:hover .dropdown_contents {
     display: block;
 }
-.content{
-    padding-left: 120px;
+
+.content {
+    padding-left: 130px;
     padding-right: 120px;
+    overflow: hidden;
 }
+
 /* Slideshow container */
 .container {
     position: relative;
@@ -121,12 +124,22 @@ body {
 
 /* Caption text */
 .text {
-    font-size: xx-large;
-    font-style: italic;
-    top: 50%;
     position: absolute;
-    bottom: 8px;
-    width: 100%;
+    bottom: 0;
+    text-align: center;
+    width: 50%;
+    font-size: xx-large;
+    line-height: 100px;
+    left: 25%;
+    bottom: 45%;
+}
+
+.one {
+    border: 0.1px solid black;
+}
+
+.two {
+    color: white;
 }
 
 
@@ -174,46 +187,94 @@ body {
     }
 }
 
-.right{
-    column-count:2;
+.right {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0.1px;
+    column-count: 2;
     column-gap: 0.1px;
     padding: 0;
+    margin-left: -10px;
 }
-.grid{
+
+.grid {
     width: 350px;
     position: relative;
+    margin-left: -10px;
 }
-.hx1{
+
+.hx1 {
     margin-bottom: 15px;
     margin-right: 15px;
 }
-.hx2{
+
+.hx2 {
     margin-bottom: 15px;
 }
-.dexign{
-    border: 0.1px solid black;
-}
-.block {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 16px;
-    display: inline-block;
-    position: relative;
+.h4:hover{
+    font-weight: bold;
 }
 .absolute {
     bottom: 0;
-    margin-bottom: 30px;
     position: absolute;
     text-align: center;
-    background-color: lightgray;
-    opacity: .6;
-    width: 80%;
-    left: 10%;
-    right: 10%;
 }
-.absolute:hover{
+
+.absolute:hover {
     font-weight: bold;
 }
-.looks{
-    
+/* text arrange of each div */
+.looks {
+    width: 80%;
+    color: white;
+    bottom: 70px;
+    left: 20px;
+}
+
+.wears {
+    background-color: #efefef;
+    width: 50%;
+    left: 22%;
+    right: 10%;
+    bottom: 20px;
+}
+
+.pricetag {
+    color: white;
+    width: 70%;
+    left: 15%;
+    bottom: 20px;
+    opacity: .7;
+}
+
+.beauty {
+    border: 0.1px solid #efefef;
+    width: 99.8%;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.first_text {
+    margin-top: 100px;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/* text arrangement ends */
+
+/* designing the image gallery */
+.module {
+    padding: 30px 10px;
+}
+
+.main_module {
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0.1px;
+    column-count: 5;
+    column-gap: 0.1px;
+    padding: 0;
+}
+.img_txt:hover {
+    color: red;
 }

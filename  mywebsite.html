@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,57 +37,96 @@
         <!--slideshow container-->
         <div class="container">
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 2</div>
-                    <img src="img1.jpg" style="width: auto">
-                    <div class="text">Caption Text</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 2</div>
-                    <img src="img7.jpg" style="width: auto">
-                    <div class="text">Caption Text</div>
-                </div>
-                <script>
-                    var slideIndex = 0;
-                    showSlides();
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="img1.jpg" style="width: auto">
+                <div class="text one">Update <b>Your Look</b></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="img7.jpg" style="width: auto">
+                <div class="text two">EXCLUSIVE</div>
+            </div>
+            <script>
+                var slideIndex = 0;
+                showSlides();
 
-                    function showSlides() {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("dot");
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        slideIndex++;
-                        if (slideIndex > slides.length) {
-                            slideIndex = 1
-                        }
-                        slides[slideIndex - 1].style.display = "block";
-                        setTimeout(showSlides, 7000); // Change image every 7 seconds
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
                     }
-                </script>
-            </div>
-            <div class="container">
-                <div class="container right">
-                    <div class="grid hx1">
-                        <img src="img3.jpg" alt="random_image">
-                        <div class="absolute looks">NEW LOOKS<br />LUXURY</div>
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 7000); // Change image every 7 seconds
+                }
+            </script>
+        </div>
+        <div class="container">
+            <div class="container right">
+                <div class="grid hx1">
+                    <img src="img3.jpg" alt="random_image">
+                    <div class="absolute looks">
+                        <p>NEW LOOKS</p><br />
+                        <h4>LUXURY</h4>
                     </div>
-                    <div class="grid hx2">
-                        <img src="img2.jpg" alt="random_image">
-                        <div class="absolute wears">FOOTWEARS</div>
+                </div>
+                <div class="grid hx2">
+                    <img src="img2.jpg" alt="random_image">
+                    <div class="absolute wears">
+                        <p>FOOTWEARS</p>
                     </div>
-                    <div class="grid hx2 dexign">
-                        <img src="img4.jpg" alt="random_image">
-                        <div class="absolute pricetag">Starting at $25</div>
+                </div>
+                <div class="grid hx2 dexign">
+                    <img src="img4.jpg" alt="random_image">
+                    <div class="absolute pricetag">
+                        <p>STARTING AT $25</p>
                     </div>
-                    <div class="grid hx1">
-                        <img src="img5.jpg" alt="random_image">
-                        <div class="absolute beauty">BEAUTY<br />&<br />ELEGANCE</div>
+                </div>
+                <div class="grid hx1">
+                    <img src="img5.jpg" alt="random_image">
+                    <div class="absolute beauty">
+                        <h4>BEAUTY & ELEGANCE</h4>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="first_text">
+        <p><u>DISCOVER YOUR STYLE</u></p>
+    </div>
+    </div>
+    <div class="content">
+        <div class="module">
+            <div class="main_module">
+                <div class="image">
+                    <img src="img6.jpg" alt="links to men's wear">
+                    <div class="img_txt">Men's Wear</div>
+                </div>
+                <div class="image">
+                    <img src="img8.jpg" alt="links to women's wear">
+                    <div class="img_txt">Women's Wear</div>
+                </div>
+                <div class="image">
+                    <img src="img9.jpg" alt="links to kid's wear">
+                    <div class="img_txt">Kid's wear</div>
+                </div>
+                <div class="image">
+                    <img src="img10.jpg" alt="links to women's wear">
+                    <div class="img_txt">Dress</div>
+                </div>
+                <div class="image">
+                    <img src="img11.jpg" alt="links to footwears">
+                    <div class="img_txt">Footwears</div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
