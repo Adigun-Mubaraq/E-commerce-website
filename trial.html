@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slider">
+        <img id="slide" width="100%" src="img19.jpg">
+        <br />
+        <a id="prev" onclick="goback();"> &#10094; </a>
+        <a id="next" onclick="gofwd();"> &#10095; </a>
+    </div>
+</body>
+<script>
+    var images = ["img19.jpg","img20.jpg","img21jpg"];
+    var index = 0;
+
+    function goback() {
+        var image = document.getElementById("slide");
+        if (index > 0) {
+            index--;
+        }
+        else if(index <= 0){
+            index = 0;
+        }
+    }
+    function gofwd() {
+        var image = document.getElementById("slide");
+        if (index < images.length){
+            index = index + 1;
+        }
+    }
+</script>
+
+</html>
