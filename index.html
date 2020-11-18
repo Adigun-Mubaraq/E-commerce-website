@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -232,48 +231,134 @@
             </div>
         </div>
     </div>
-    <div class="slider">
-        <img id="slide" width="100%" src="img19.jpg">
-        <br />
-        <a id="prev" onclick="goback();"> &#10094; </a>
-        <a id="next" onclick="gofwd();"> &#10095; </a>
+    <div class="image_slider_container">
+        <div class="image_slider">
+            <img width="100%" src="img19.jpg">
+        </div>
+        <div class="image_slider">
+            <img width="100%" src="img20.jpg">
+        </div>
+
+        <!-- next and previous buttons -->
+        <span id="prev" onclick="plusSlides(-1)"> &#10094; </span>
+        <span id="next" onclick="plusSlides(1)"> &#10095; </span>
+    </div>
+    <div class="content2">
+        <div class="products_container">
+            <div class="product_block">
+                <div class="product_image">
+                    <img src="img11.jpg" alt="dress">
+                    <div class="image_text">
+                        Blue Jean Jacket<br />
+                        <strong>$400</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="product_block">
+                <div class="product_image">
+                    <img src="img12.jpg" alt="dress">
+                    <div class="image_text">
+                        Black Long Skirt<br />
+                        <strong>$1000</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="product_block">
+                <div class="product_image">
+                    <img src="img27.jpg" alt="dress">
+                    <div class="image_text">
+                        Super Terra Pant<br />
+                        <strong>$700</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="product_block">
+                <div class="product_image">
+                    <img src="img30.jpg" alt="dress">
+                    <div class="image_text">
+                        long Cardigan Ladies<br />
+                        <strong>$400</strong>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image">
+                        <img src="img26.jpg" alt="dress">
+                        <div class="image_text">
+                            Women's Handbag <br />
+                            <strong>$650</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image">
+                        <img src="img28.jpg" alt="dress">
+                        <div class="image_text">
+                            Hoody (White)<br />
+                            <strong>$500</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image">
+                        <img src="img29.jpg" alt="dress">
+                        <div class="image_text">
+                            Marvel Hoody<br />
+                            <strong>$1000</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image">
+                        <img src="img13.jpg" alt="dress">
+                        <div class="image_text">
+                            Leather Bag(Women)<br />
+                            <strong>$400</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">
+            <img src="logo.png" alt="LOGO" class="footer_logo">
+        </div>
+        <div class="menu_footer">
+            <p>
+                <a href="#">Advertise With us</a><br />
+                <a href="#">Private Policy</a>
+            </p>
+            <p>
+                <a href="#">About</a><br />
+                <a href="#">Help</a>
+            </p>
+            <p>
+                <a href="#">Contact</a><br />
+                <a href="#">Terms Of Service</a>
+            </p>
+        </div>
+        <div class="newsletter_container">
+            <div class="newsletter">
+                <p class="newsletter_header">SIGN UP FOR THE ASHION NEWSLETTER</p>
+                <p class="subheader">GET UPDATED WITH DESIGNS</p>
+                <div class="email_container">
+                    <input type="email" name="emails" placeholder="Enter E-mail For Newsletter">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 <script>
     var slideIndex = 0;
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
     showSlides();
-
-
-
-
-    var images = [];
-    images[0] = "img19.jpg";
-    images[1] = "img20.jpg";
-
-
-    var num_img = 2;
-    var cur_img = 0;
-
-    function goback() {
-        var image = document.getElementById("slide");
-        if (cur_img > 0) {
-            image.src = images[cur_img - 1]
-        }
-        else if (cur_img <= 0) {
-            image.src = images[0]
-        }
-    }
-    function gofwd() {
-        var image = document.getElementById("slide");
-        if (cur_img < num_img) {
-            image.src = images[cur_img + 1];
-        }
-    }
+    var sliderIndex = 1;
+    showSlider(sliderIndex);
 
     function showSlides() {
-        for (i = 0; i < slides.length; i++) {
+        var slides = document.getElementsByClassName("mySlides");
+        for (var i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         slideIndex++;
@@ -285,11 +370,26 @@
     }
     function leftScroll() {
         let element = document.getElementById("gallery");
-        element.scrollLeft = -500;
+        element.scrollLeft = -1000;
+
     }
     function rightScroll() {
         let element = document.getElementById("gallery");
         element.scrollLeft = 1000;
+    }
+    function plusSlides(n) {
+        showSlider(sliderIndex += n);
+    }
+
+    function showSlider(n) {
+        var index;
+        var slider = document.getElementsByClassName("image_slider");
+        if (n > slider.length) { sliderIndex = 1 }
+        if (n < 1) { sliderIndex = slider.length }
+        for (index = 0; index < slider.length; index++) {
+            slider[index].style.display = "none";
+        }
+        slider[sliderIndex - 1].style.display = "block";
     }
 </script>
 

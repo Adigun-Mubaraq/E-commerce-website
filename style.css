@@ -22,6 +22,7 @@ body {
 
 .topnav {
     margin-top: 30px;
+    margin-right: 200px;
 }
 
 .topnav a {
@@ -39,7 +40,6 @@ body {
     border: 1px solid black;
     font-size: 15px;
     width: 250px;
-    margin-left: 300px;
     border-radius: 50px;
     margin-bottom: auto;
     margin-top: 25px;
@@ -240,8 +240,7 @@ body {
 
 #gallery {
     display: flex;
-    background-color: whitesmoke;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 #gallery::-webkit-scrollbar {
     display: none;
@@ -251,7 +250,6 @@ body {
     scrollbar-width: none;
 }
 .column {
-    box-shadow: 5px 8px 16px 0px rgba(0, 0, 0, 0.2);
     width: 100%;
     position: relative;
     margin-left: 10px;
@@ -369,14 +367,13 @@ body {
     -moz-column-count: 4;
     -moz-column-gap: 0.1px;
     -o-column-count: 4;
-    -o-coloumn-gap: 0.1px;
+    -o-column-gap: 0.1px;
     margin-left: 20px;
     margin-bottom: 100px;
 }
 .product_block{
     width: 300px;
     margin-bottom: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .product_image{
     display: block;
@@ -405,12 +402,16 @@ body {
 .carosuel_image{
     max-width: 100%;
 }
-.slider{
+.image_slider_container{
     position: relative;
+}
+.image_slider{
+    margin-bottom: 50px;
+    display: none;
 }
 #prev, #next{
     position: absolute;
-    top: 50%;
+    top: 45%;
     font-weight: bolder;
     padding: 16px;
     font-size: xx-large;
@@ -425,3 +426,77 @@ body {
 #prev:hover, #next:hover{
     background-color: lightgrey;
 }
+.footer{
+    background-color: whitesmoke;
+    height: auto;
+    display: flex;
+}
+.footer_logo{
+    display: block;
+    width: 100px;
+    padding: 60px 40px 40px 40px;
+    margin: 0 auto 0 auto;
+}
+.logo_footer{
+    width:20%;
+}
+.menu_footer{
+    width: 45%;
+}
+
+.menu_footer>p{
+    color: black;
+    display: inline-block;
+    padding: 40px;   
+}
+.menu_footer>p>a{
+    text-decoration: none;
+    color: black;
+}
+.newsletter_container{
+    margin-bottom: 20px;
+}
+.newsletter{
+    background-color: rgb(116, 113, 113);
+    color: white;
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin: 0 auto 0 auto;
+
+}
+.newsletter>p{
+    text-align: center;
+
+}
+.subheader{
+    margin-bottom: 50px;
+}
+.newsletter_header{
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+.email_container{
+    display: block;
+    width: 400px;
+    margin: 0 auto 0 auto;
+}
+.email_container input[type="email"]{
+        padding: 7px 15px;
+        border: 1px solid black;
+        font-size: 15px;
+        width: 250px;
+        margin-bottom: auto;
+}
+.email_container input[type="submit"]{
+        padding: 7px 15px;
+        border: 1px solid black;
+        font-size: 15px;
+        width: 90px;
+        color: white;
+        background-color: black;
+        margin-bottom: auto;
+}
+
+
