@@ -8,5 +8,5 @@ Major Programming Languages involved
 2.CSS<br>
 3.JAVASCRIPT<br>
 
-**This is strictly a front-end development.** 
+**This is strictly a front-end development.** <br>
 feel free to fork 🛩️
