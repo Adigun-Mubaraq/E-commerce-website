@@ -4,9 +4,9 @@ It is a trading website use to trade accessories, wears and clothing for both se
 
 Major Programming Languages involved
 ---
--HTML
--CSS
--JAVASCRIPT
+HTML
+CSS
+JAVASCRIPT
 
 **This is strictly a front-end development.** 
 feel free to fork 🛩️
