@@ -1,6 +1,5 @@
 # E - comerce website
-It is a trading website use to trade accessories, wears and clothing for both sex.
-
+This is a web application that allow consumers to buy goods or services directly over the internet using a web browser.
 
 Major Programming Languages involved
 ---
@@ -9,4 +8,4 @@ Major Programming Languages involved
 3.JAVASCRIPT<br>
 
 **This is strictly a front-end development.** <br>
-feel free to fork 🛩️
+Feel free to Fork.
