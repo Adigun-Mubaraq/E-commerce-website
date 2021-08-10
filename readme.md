@@ -1,5 +1,5 @@
 # E - comerce website
-This is a web application that allow consumers to buy goods or services directly over the internet using a web browser.
+This is a web application that allows consumers to buy goods or services directly over the internet using a web browser.
 
 Major Programming Languages involved
 ---
